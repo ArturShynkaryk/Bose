@@ -23,7 +23,6 @@
  }
 
  .header__text {
-    font-family: Inter;
     font-weight: 800;
     font-style: italic;
     letter-spacing: -1.5px;
@@ -38,4 +37,33 @@
  }
 
 
- 
+ .menu {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #E8EFF9; 
+    height: 100vh;
+    border: 1px solid #000;
+    padding: 64px 120px;
+    background-repeat: no-repeat ;
+    background-size:cover;
+  }
+
+  .burger__logo {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .burger__menu {
+    color: #292929;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 64px;
+    
+
+ }
