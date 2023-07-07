@@ -1,8 +1,18 @@
+ html {
+   scroll-behavior: smooth;
+ }
+ 
+ 
  body {
     margin: 0 ;
     font-family: 'Inter', sans-serif;
  }
  
+
+section{
+   height: 800px;
+}
+
  header {
    display: flex;
    justify-content: space-between;
@@ -56,15 +66,22 @@
     justify-content: space-between;
  }
 
- .burger__menu {
+.burger__menu {
+   display: flex;
+   flex-direction: column;
+   /* gap:32px */
+}
+
+ .nav__link {
     color: #292929;
     font-size: 22px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+    font-weight: bold;
+    line-height: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 64px;
+    text-decoration: none;
     
 
  }
