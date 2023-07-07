@@ -179,6 +179,42 @@ line-height: 140%;
    margin-right: 24px;
 }
 
+.direct__title {
+color: #292929;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -1.5px;
+}
+
+.last__block {
+   display: flex;
+   justify-content: center;
+   margin: 0 120px 120px 120px ;
+}
+
+.last__title {
+ margin-right: 111px;
+ 
+}
+
+h4 {
+color: #292929;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+
+.last_text{
+color: #292929;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+}
 
 
  footer{
