@@ -255,10 +255,24 @@ html {
  /* #region photo */
  .photo-wide {
    width: 65%;
+   object-fit: cover;
  }
  .photo-square {
    width: 32%;
+   object-fit: cover;
  }
+
+
+ @media (max-width:576px) {
+   .photo-wide {
+      width: 48.5%;
+    }
+    .photo-square {
+      width: 48.5%;
+    }
+ }
+
+
  /* #endregion */
  /* #region how-to-buy */
  .how-to-buy {
