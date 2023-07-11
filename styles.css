@@ -9,6 +9,16 @@
  }
  
 
+ .logo {
+   height: 24px;
+ }
+
+ @media (max-width: 576px) {
+   .logo {
+      height: 16px;
+   }
+ }
+
  .btn {
    cursor: pointer;
  }
@@ -31,6 +41,21 @@
    background-size:cover;
  }
 
+@media (max-width: 1024px) {
+   header {
+      padding : 64px 72px; 
+      background-image: url(./img/header-back-small.png);
+   }
+}
+
+@media (max-width: 576px) {
+   header {
+   padding: 32px 20px;
+   background-position: 0 0;
+   }
+}
+
+
  .header__logo {
     display: flex;
     justify-content: space-between;
@@ -46,6 +71,19 @@
     margin-bottom: 64px;
     
  }
+
+ @media (max-width: 1024px) {
+   .header__text {
+   font-size: 40px;
+   }
+}
+
+@media (max-width: 576px) {
+   .header__text {
+   font-size: 32px;
+   }
+}
+
 
  .header-bottom {
     margin-top: 444px;
