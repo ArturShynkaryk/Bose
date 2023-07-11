@@ -236,6 +236,19 @@ html {
    text-align: center;
    letter-spacing: -1.5px;
  }
+
+@media (max-width: 1024px) {
+   .categories__title {
+      font-size: 40px;
+   }
+}
+
+@media (max-width: 576px) {
+   .categories__title {
+      font-size: 32px;
+   }
+}
+
  /* #endregion */
  /* #region category */
  .category {
@@ -324,7 +337,7 @@ html {
 @media (max-width:576px) {
    .how-to-buy__title {
       font-size: 32px;
-      /* margin: 120px 20px; */
+     margin-bottom: 32px;
    } 
 }
 
