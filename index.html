@@ -1,115 +1,165 @@
+<!-- #region head -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <title>Bose</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body id="#home">
-    <!-- ХЕДЕР СТОРІНКИ -->
-    <header>
-        <div class="header__logo">
-           <a href="/"><img src="./img/Logo.png"  alt="header-logo" class="logo"></a> 
-         <img src="./img/Icon-Burger-menu.png" type="button" class="btn" alt="burger-menu">
-
-        </div>
-
-        <div class="header-bottom">
-            <img src="./img/Sound-waves.png" alt="logo-sound">
-        </div>
-        <h1 class="header__text">The world shades.<br> Your music shines.</h1>
-    </header>
-
-     <!-- НАВІГАЦІЯ -->
-    <div class="menu">
-        <div class="burger__logo">
-        <img src="./img/Logo.png" alt="burger-logo" class="logo">
-       <img src="./img/Icon-Close.png" type="button" class="close" alt="close-burger-icon"></button> 
+<!-- #endregion -->
+<body id="home">
+  <header class="header">
+    <div class="header__top">
+      <img src="img/Logo.png" alt="Bose logo">
+      <a href="#menu">
+        <img src="img/Icon-Burger-menu.png" alt="Burger menu">
+      </a>
     </div>
-   
-        <nav class="burger__menu">
-            <a href="#home" class="nav__link">Home</a></li>
-            <a href="#rec" class="nav__link" style="text-decoration: underline;">recommended</a></li>
-            <a href="#browse" class="nav__link">Categories</a></li>
-            <a href="#direct" class="nav__link" >How to buy</a></li>
-        </nav>
+
+    <div class="header__bottom">
+      <img src="img/Sound-waves.png" alt="Sound waves">
+
+      <h1 class="header__title">
+        The world shades.
+        <br>
+        Your music shines.
+      </h1>
     </div>
-    <main>
-        <section id="rec">
-            <div>
-            <h2 class="recommended">Recommended</h2>
+  </header>
+  
+  <div class="menu" id="menu">
+    <div class="menu__top">
+      <img src="img/Logo.png" alt="Bose logo">
+      <a href="#home">
+        <img 
+          src="img/Icon-Close.png"
+          alt="Close"
+        >
+      </a>
+    </div>
+
+    <nav class="nav">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#recommended" class="nav__link">Recommended</a>
+      <a href="#categories" class="nav__link">Categories</a>
+      <a href="#how-to-buy" class="nav__link">How to buy</a>
+    </nav>
+  </div>
+
+  <main class="main">
+    <section class="recommended" id="recommended">
+      <h2 class="recommended__title">Recommended</h2>
+
+      <div class="recommended__products">
+        <article class="product">
+          <img
+            src="./img/first.png"
+            alt="Bose portable Smart speaker"
+            class="product__photo"
+          >
+          <h3 class="product__title">Bose portable Smart speaker</h3>
+          <p class="product__category">Smart home</p>
+          <p class="product__price">$ 399.00</p>
+        </article>
+
+        <article class="product">
+          <img
+          src="./img/second.png"
+            alt="SoundLink Flex Bluetooth speaker"
+            class="product__photo"
+          >
+          <h3 class="product__title">SoundLink Flex Bluetooth speaker</h3>
+          <p class="product__category">Portable bluetooth</p>
+          <p class="product__price">$ 149.00</p>
+        </article>
+
+        <article class="product">
+          <img
+            src="./img/third.png"
+            alt="SoundLink Color Bluetooth speaker II"
+            class="product__photo"
+          >
+          <h3 class="product__title">SoundLink Color Bluetooth speaker II</h3>
+          <p class="product__category">Portable bluetooth</p>
+          <p class="product__price">$ 129.00</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <h2 class="categories__title">Browse Bose<br>products by category</h2>
+      
+      <article class="category">
+        <div class="category__photos">
+          <img 
+            src="img/Vector.png"
+            alt="Headphones & earbuds"
+            class="photo-wide"
+          >
+          <img 
+            src="img/second-girl.png"
+            alt="Headphones & earbuds"
+            class="photo-square"
+          >
         </div>
-        <div class="staff">
-            <div class="first__staff">
-                <img src="./img/first.png" alt="">
-                <h3 class="name__staff" >Bose portable Smart speaker</h3>
-                <p class="type">Smart home</p>
-                <p class="price">$ 399.00</p>
-            </div>
-            <div class="second__staff">
-                <img src="./img/second.png" alt="">
-                <h3 class="name__staff">SoundLink Flex Bluetooth speaker</h3>
-                <p class="type" >Portable bluetooth</p>
-                <p class="price">$ 149.00</p>
-            </div>
-            <div class="third__staff">
-                <img src="./img/third.png" alt="">
-                <h3 class="name__staff">SoundLink Color Bluetooth speaker II</h3>
-                <p class="type" >Portable bluetooth</p>
-                <p class="price">$ 129.00</p>
-            </div>
+        <h3 class="category__title">Headphones & earbuds</h3>
+      </article>
+
+      <article class="category">
+        <div class="category__photos">
+          <img 
+            src="img/second-category.png"
+            alt="Speakers"
+            class="photo-wide"
+          >
+          <img 
+            src="img/second-category1.png"
+            alt="Speakers"
+            class="photo-square"
+          >
         </div>
-        </section>
-        <section id="browse">
-            <h2 class="browse">Browse Bose <br> products by category</h2>
-            <div class="category">
-                <div>
-                <div class="first__category">
-                    <img  class="img-mar" src="./img/Vector.png" alt="first girl">
-                    <img src="./img/second-girl.png" alt="second girl">
-                    <h3 class="category__title">Headphones & earbuds</h3>
-                </div>
-                <div class="second__category">
-                    <img class="img-mar" src="./img/second-category.png" alt="second category">
-                    <img src="./img/second-category1.png" alt="second category">
-                    <h3 class="category__title">Speakers</h3>
-                </div>
-                <div class="third__category">
-                    <img class="img-mar" src="./img/3_category_man.png" alt="first girl">
-                    <img src="./img/3.png" alt="second girl">
-                    <h3 class="category__title">Audio sunglasses</h3>
-                </div>
-            </div>   
-            </div>
-        </section>
-        <section  id="direct">
-            
-            
-         <div class="last__block">
-            <div class="last__title">
-                <h2 class="direct__title" style="margin-top: 15px;" >Why buy direct <br> from Bose</h2>
-            </div> 
-            
-         <div class="block__text">
-            <h4>Free 2-day shipping and returns</h4>
-            <h4>90-day risk-free trial</h4>
-            <h4>World class customer service</h4>
-            <h4>My Bose account management</h4>
-            <p class="last__text">A great product is more than what’s in the box. It’s a promise of <br>
-               premium performance, world-class support, and everything you <br>
-               expect from a trusted brand. It’s just one of many reasons why <br>
-               you’ll shop with confidence on Bose.com.</p>
-          </div>
-         </div>
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
-    <script src="./scripts/main.js"></script>
+        <h3 class="category__title">Speakers</h3>
+      </article>
+
+      <article class="category">
+        <div class="category__photos">
+          <img 
+          src="img/3_category_man.png"
+            alt="Audio sunglasses"
+            class="photo-square"
+          >
+          <img 
+            src="img/3.png"
+            alt="Audio sunglasses"
+            class="photo-wide"
+          >
+        </div>
+        <h3 class="category__title">Audio sunglasses</h3>
+      </article>
+    </section>
+
+    <section class="how-to-buy" id="how-to-buy">
+      <h2 class="how-to-buy__title">Why buy direct<br> from Bose</h2>
+    
+      <div class="how-to-buy__content">
+        <ul class="how-to-buy__benefits">
+          <li>Free 2-day shipping and returns</li>
+          <li>90-day risk-free trial</li>
+          <li>World class customer service</li>
+          <li>My Bose account management</li>
+        </ul>
+
+        <p class="how-to-buy__description">
+          A great product is more than what’s in the box. It’s a promise of premium performance, world-class support, and everything you expect from a trusted brand. It’s just one of many reasons why you’ll shop with confidence on Bose.com.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
 </body>
-</html>
