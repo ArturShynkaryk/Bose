@@ -167,6 +167,22 @@
    
 }
 
+@media (max-width: 1024px) {
+   .staff 
+      {
+      margin : 64px 72px; 
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 576px) {
+   .staff {  
+   padding: 36px 20px;
+   flex-direction: column;
+   }
+}
+
+
 .first__staff , .second__staff {
    margin-right: 24px;
    flex-direction: column;
