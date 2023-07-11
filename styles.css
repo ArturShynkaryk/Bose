@@ -108,6 +108,20 @@
     display: none;
   }
 
+  @media (max-width: 1024px) {
+   .menu {
+      padding : 64px 72px; 
+   }
+}
+
+@media (max-width: 576px) {
+   .menu {
+   padding: 36px 20px;
+   }
+}
+
+
+
   .burger__logo {
     display: flex;
     justify-content: space-between;
